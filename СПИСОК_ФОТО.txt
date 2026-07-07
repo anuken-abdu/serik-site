@@ -1,0 +1,32 @@
+СПИСОК ИЗОБРАЖЕНИЙ ДЛЯ САЙТА bau
+Все файлы кладём в папку images/ рядом со страницами.
+
+=== ЛОГОТИП И ИКОНКА (загружаешь сам) ===
+logo.png        — логотип для шапки/меню/футера (прозрачный фон PNG, высота ~88px, квадратный или широкий, без рамок)
+favicon.png     — иконка вкладки (32x32 или 48x48 PNG)
+
+=== ГЛАВНЫЙ БАННЕР ===
+hero-main.webp  — широкий баннер на главной (пропорции ~21:8, напр. 1680x640)
+
+=== ФОТО УСЛУГ (по 4 на каждую услугу, формат 4:3, напр. 800x600) ===
+remont-pod-klyuch-1.webp … remont-pod-klyuch-4.webp
+chernovoy-remont-1.webp … chernovoy-remont-4.webp
+chistovoy-remont-1.webp … chistovoy-remont-4.webp
+dizaynerskiy-remont-1.webp … dizaynerskiy-remont-4.webp
+remont-sanuzla-1.webp … remont-sanuzla-4.webp
+remont-kuhni-1.webp … remont-kuhni-4.webp
+elektromontazh-1.webp … elektromontazh-4.webp
+santehnika-1.webp … santehnika-4.webp
+shtukaturka-1.webp … shtukaturka-4.webp
+natyazhnye-potolki-1.webp … natyazhnye-potolki-4.webp
+ukladka-plitki-1.webp … ukladka-plitki-4.webp
+malyarnye-raboty-1.webp … malyarnye-raboty-4.webp
+(фото №1 каждой услуги показывается ещё и в карточке на главной)
+
+=== ПОРТФОЛИО (6 фото, формат 4:3) ===
+portfolio-1.webp … portfolio-6.webp
+
+ИТОГО: 1 баннер + 48 фото услуг + 6 портфолио = 55 картинок + logo.png + favicon.png
+
+Пока фото нет — на их месте показывается имя нужного файла (плейсхолдер).
+Как только положишь файл с точным именем в images/ — он подставится автоматически.
