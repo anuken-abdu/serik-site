@@ -61,9 +61,8 @@ ul{list-style:none}
 .header-in{display:flex;align-items:center;justify-content:space-between;height:60px;gap:16px}
 @media(min-width:768px){.header-in{height:72px}}
 .logo-link{display:flex;align-items:center;flex-shrink:0}
-.logo{height:40px;width:auto;display:block;border:0}
-.logo-text{color:#fff;font-weight:800;font-size:22px;letter-spacing:.02em;line-height:1;white-space:nowrap}
-@media(min-width:768px){.logo{height:44px}}
+.logo{height:38px;width:auto;max-width:210px;object-fit:contain;display:block;border:0}
+@media(min-width:768px){.logo{height:46px;max-width:300px}}
 .nav{display:none;align-items:center;gap:22px;min-width:0}
 .nav-a{font-weight:600;font-size:14px;letter-spacing:.02em;color:#fff;transition:color .2s;white-space:nowrap}
 .nav-a:hover{color:var(--accent)}
@@ -88,8 +87,8 @@ ul{list-style:none}
 .hero-img{display:none;position:relative;background:var(--ink2);border:1px solid rgba(255,255,255,.08);aspect-ratio:21/8;overflow:hidden}
 @media(min-width:768px){.hero-img{display:block}}
 .hero-img img{width:100%;height:100%;object-fit:cover}
-.hero-top{padding:32px 0 48px}
-@media(min-width:768px){.hero-top{padding:40px 0 64px}}
+.hero-top{padding-top:32px;padding-bottom:48px}
+@media(min-width:768px){.hero-top{padding-top:40px;padding-bottom:64px}}
 .hero-row{margin-top:24px;display:flex;flex-direction:column;gap:20px}
 @media(min-width:768px){.hero-row{flex-direction:row;align-items:center;gap:32px}}
 .hero-btn{width:100%}
@@ -158,8 +157,8 @@ ul{list-style:none}
 @media(min-width:640px){.pf-mob{display:none}}
 .grid-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
 @media(min-width:768px){.grid-gallery{grid-template-columns:repeat(4,minmax(0,1fr))}}
-.cta-band{display:flex;flex-direction:column;align-items:center;justify-content:space-between;gap:24px;text-align:center;padding:48px 0}
-@media(min-width:768px){.cta-band{flex-direction:row;text-align:left;padding:56px 0}}
+.cta-band{display:flex;flex-direction:column;align-items:center;justify-content:space-between;gap:24px;text-align:center;padding-top:48px;padding-bottom:48px}
+@media(min-width:768px){.cta-band{flex-direction:row;text-align:left;padding-top:56px;padding-bottom:56px}}
 .cta-h{color:#fff;font-size:24px;font-weight:800;text-transform:uppercase;letter-spacing:.045em}
 @media(min-width:768px){.cta-h{font-size:30px}}
 .cta-p{color:rgba(255,255,255,.7);margin-top:8px;font-size:16px}
@@ -167,7 +166,7 @@ ul{list-style:none}
 @media(min-width:640px){.cta-actions{flex-direction:row}}
 .cta-phone{color:#fff;font-size:20px;font-weight:700;white-space:nowrap}
 .footer{background:var(--ink2);color:#fff}
-.grid-footer{display:grid;grid-template-columns:minmax(0,1fr);gap:40px;padding:56px 0}
+.grid-footer{display:grid;grid-template-columns:minmax(0,1fr);gap:40px;padding-top:56px;padding-bottom:56px}
 @media(min-width:768px){.grid-footer{grid-template-columns:repeat(4,minmax(0,1fr))}}
 .foot-t{color:#fff;font-weight:700;margin-bottom:16px;font-size:14px;text-transform:uppercase;letter-spacing:.045em}
 .foot-list li{margin-bottom:10px}
@@ -176,7 +175,7 @@ ul{list-style:none}
 .foot-p{color:rgba(255,255,255,.55);font-size:14px;line-height:1.6}
 .foot-phone{display:block;color:#fff;font-size:18px;font-weight:700;margin-bottom:8px}
 .foot-bottom{border-top:1px solid rgba(255,255,255,.1)}
-.foot-bottom-in{display:flex;flex-direction:column;align-items:center;justify-content:space-between;gap:12px;padding:20px 0;color:rgba(255,255,255,.45);font-size:12px;text-align:center}
+.foot-bottom-in{display:flex;flex-direction:column;align-items:center;justify-content:space-between;gap:12px;padding-top:20px;padding-bottom:20px;color:rgba(255,255,255,.45);font-size:12px;text-align:center}
 @media(min-width:640px){.foot-bottom-in{flex-direction:row;text-align:left}}
 .foot-bottom-in a:hover{color:rgba(255,255,255,.8)}
 .fab-wrap{position:fixed;z-index:40;right:16px;bottom:16px;display:flex;flex-direction:column;gap:8px}
@@ -184,8 +183,8 @@ ul{list-style:none}
 .fab:hover{background:var(--accent)}
 .crumb{color:rgba(255,255,255,.5);font-size:12px;text-transform:uppercase;letter-spacing:.045em;margin-bottom:20px}
 .crumb a:hover{color:#fff}
-.inner-hero{padding:24px 0 48px}
-@media(min-width:768px){.inner-hero{padding:32px 0 56px}}
+.inner-hero{padding-top:24px;padding-bottom:48px}
+@media(min-width:768px){.inner-hero{padding-top:32px;padding-bottom:56px}}
 .split{display:grid;grid-template-columns:minmax(0,1fr);gap:32px;align-items:center}
 @media(min-width:768px){.split{grid-template-columns:repeat(2,minmax(0,1fr));gap:40px}}
 .svc-hero-img{position:relative;background:var(--ink2);border:1px solid rgba(255,255,255,.08);aspect-ratio:4/3;overflow:hidden}
@@ -221,7 +220,7 @@ ul{list-style:none}
 
 <header class="header">
   <div class="wrap header-in">
-    <a href="index.html" class="logo-link"><img src="images/logo.png" alt="bau — ремонт квартир под ключ в Астане" class="logo" onerror="var s=document.createElement('span');s.className='logo-text';s.textContent='bau';this.replaceWith(s)"></a>
+    <a href="index.html" class="logo-link"><img src="images/logo.png" alt="bau — ремонт квартир под ключ в Астане" class="logo" onerror="this.style.display='none'"></a>
     <nav class="nav"><a href="index.html#services" class="nav-a">Услуги</a><a href="portfolio.html" class="nav-a">Портфолио</a><a href="about.html" class="nav-a">О компании</a><a href="contacts.html" class="nav-a">Контакты</a></nav>
     <div class="header-cta">
       <a href="tel:+77476478605" class="header-phone">+7 747 647 8605</a>
@@ -234,7 +233,7 @@ ul{list-style:none}
 </header>
 <div id="overlay" class="overlay"></div>
 <aside id="menu" class="menu">
-  <div class="menu-head"><img src="images/logo.png" alt="bau — ремонт квартир под ключ в Астане" class="logo" onerror="var s=document.createElement('span');s.className='logo-text';s.textContent='bau';this.replaceWith(s)">
+  <div class="menu-head"><img src="images/logo.png" alt="bau — ремонт квартир под ключ в Астане" class="logo" onerror="this.style.display='none'">
     <button id="close" class="close" aria-label="Закрыть">
       <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
     </button>
@@ -288,7 +287,7 @@ ul{list-style:none}
 <footer class="footer">
   <div class="wrap grid-footer">
     <div>
-      <div class="mb-4"><img src="images/logo.png" alt="bau — ремонт квартир под ключ в Астане" class="logo" onerror="var s=document.createElement('span');s.className='logo-text';s.textContent='bau';this.replaceWith(s)"></div>
+      <div class="mb-4"><img src="images/logo.png" alt="bau — ремонт квартир под ключ в Астане" class="logo" onerror="this.style.display='none'"></div>
       <p class="foot-p">Ремонт квартир под ключ в Астане: замер, проект, черновые и чистовые работы, сдача под заселение.</p>
     </div>
     <div>
