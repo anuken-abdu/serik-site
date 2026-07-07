@@ -1,0 +1,35 @@
+САЙТ bau — как опубликовать (без build.py, обычные html-файлы)
+
+В папке лежит готовый сайт: 16 html-страниц + папка images.
+Никаких скриптов запускать НЕ нужно. Это обычные файлы, как у prometall.
+
+━━━ ГЛАВНОЕ ПРАВИЛО ━━━
+Заливать ВСЕ файлы и папку images ЦЕЛИКОМ, вместе, в один каталог.
+Если залить только index.html — остальные страницы будут выдавать 404
+(«страница не работает»). Нужны все 16 html + папка images рядом с ними.
+
+━━━ СТРУКТУРА (ничего не переименовывать) ━━━
+index.html
+remont-pod-klyuch.html, chernovoy-remont.html, chistovoy-remont.html,
+dizaynerskiy-remont.html, remont-sanuzla.html, remont-kuhni.html,
+elektromontazh.html, santehnika.html, shtukaturka.html,
+natyazhnye-potolki.html, ukladka-plitki.html, malyarnye-raboty.html
+portfolio.html, about.html, contacts.html
+images/  ← папка строго маленькими буквами (GitHub Pages чувствителен к регистру!)
+
+━━━ GitHub Pages ━━━
+1. Загрузить все файлы + папку images в корень репозитория.
+2. Settings → Pages → Branch: main → /(root) → Save.
+3. Папка обязательно называется images (не Images, не IMAGES).
+
+━━━ ПРОВЕРИТЬ ЛОКАЛЬНО ━━━
+Просто дважды кликнуть index.html — откроется в браузере, все ссылки работают.
+
+━━━ ПЕРЕД ПУБЛИКАЦИЕЙ ━━━
+1. Положить в images/: logo.png, favicon.png и фото (список — в images/СПИСОК_ФОТО.txt).
+2. Заменить домен и Google Ads ID (см. ниже, если нужно) — правится обычным
+   поиском-заменой в любом редакторе по всем файлам:
+      https://bau.kz/     → ваш реальный домен
+      AW-XXXXXXXXXX        → ваш ID Google Ads (или удалить блок <!-- Google tag -->)
+
+Телефон на сайте: +7 747 647 8605
