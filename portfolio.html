@@ -86,7 +86,6 @@ ul{list-style:none}
 @media(min-width:1024px){.menu,.overlay{display:none!important}}
 .hero-img{display:none;position:relative;background:var(--ink2);border:1px solid rgba(255,255,255,.08);aspect-ratio:21/8;overflow:hidden}
 @media(min-width:768px){.hero-img{display:block}}
-.hero-img img{width:100%;height:100%;object-fit:cover}
 .hero-top{padding-top:32px;padding-bottom:48px}
 @media(min-width:768px){.hero-top{padding-top:40px;padding-bottom:64px}}
 .hero-row{margin-top:24px;display:flex;flex-direction:column;gap:20px}
@@ -143,7 +142,7 @@ ul{list-style:none}
 .ph{position:relative;background:#EADFCF;overflow:hidden}
 .ph .lbl,.hero-img .lbl,.svc-hero-img .lbl{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#A99A82;font-size:12px;text-align:center;padding:10px;line-height:1.4}
 .hero-img .lbl,.svc-hero-img .lbl{color:rgba(255,255,255,.25)}
-.ph img{position:relative;z-index:1;width:100%;height:100%;object-fit:cover}
+.ph img,.hero-img img,.svc-hero-img img{position:relative;z-index:1;width:100%;height:100%;object-fit:cover}
 .r43{aspect-ratio:4/3}
 .card-body{padding:20px;display:flex;align-items:center;justify-content:space-between;gap:10px}
 .card-t{font-weight:700;font-size:16px;line-height:1.2;text-transform:uppercase;letter-spacing:.045em;color:var(--navy)}
@@ -319,6 +318,13 @@ ul{list-style:none}
   if(gt)gt.addEventListener('click',function(){ window.scrollTo({top:0,behavior:'smooth'}); });
   function tg(){ if(!gt)return; if(window.scrollY>300){gt.style.opacity='1';gt.style.pointerEvents='auto';}else{gt.style.opacity='0';gt.style.pointerEvents='none';} }
   window.addEventListener('scroll',tg,{passive:true}); tg();
+  // подпись-плейсхолдер прячем, как только фото загрузилось
+  document.querySelectorAll('.ph img,.hero-img img,.svc-hero-img img').forEach(function(img){
+    var lbl=img.parentNode.querySelector('.lbl');
+    function hide(){ if(lbl) lbl.style.display='none'; }
+    if(img.complete && img.naturalWidth>0){ hide(); }
+    img.addEventListener('load',hide);
+  });
 })();
 </script>
 
